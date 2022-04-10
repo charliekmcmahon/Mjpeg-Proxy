@@ -5,11 +5,7 @@ var app = express();
 
 // Listen on the root domain (/) and display something
 app.get('/', (req, res) => {
-  res.send(`<br> Media proxy -> <strong style="color: lightgreen; font-family: Arial;">online<strong>
-	<br>
-	<p>Toy Soldier:</p>
-	<img src="/toy-soldier" width="100"></img> <br>
-	`);
+  res.send(`<br> working`);
 })
 
 // Toy Soldier Camera
