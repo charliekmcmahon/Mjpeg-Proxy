@@ -7,10 +7,8 @@ var app = express();
 app.get('/', (req, res) => {
   res.send(`<br> Media proxy -> <strong style="color: lightgreen; font-family: Arial;">online<strong>
 	<br>
-	<p>Chocolate Front Cam:</p>
-	<img src="/chocolate-front" width="100"></img> <br>
-	<p>Claw Front Cam:</p>
-	<img src="/toy-front" width="100"></img> <br>
+	<p>Toy Soldier:</p>
+	<img src="/toy-soldier" width="100"></img> <br>
 	`);
 })
 
