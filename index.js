@@ -14,11 +14,8 @@ app.get('/', (req, res) => {
 	`);
 })
 
-// Chocolate Machine Cameras
-app.get('/chocolate-front', new MjpegProxy('http://ramsom.ddns.net:8082/video').proxyRequest);
-
-// Toy Claw Machine Cameras
-app.get('/toy-front', new MjpegProxy('http://ramsom.ddns.net:8081/video').proxyRequest);
+// Toy Soldier Camera
+app.get('/toy-soldier', new MjpegProxy('http://netclaw.ddns.net:8081/video').proxyRequest);
 
 // Start the server on port 80
 app.listen(80);
