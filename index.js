@@ -12,6 +12,9 @@ ports.forEach(function(port) {
 
   // Toy Soldier Camera
   app.get('/toy-soldier', new MjpegProxy('http://netclaw.ddns.net:8081/video').proxyRequest);
+  
+  // Test camera
+  app.get('/video/1', new MjpegProxy('http://61.216.97.157:16889/getimage?stream=3&0.6151334377783344').proxyRequest);
 
   // Start the servers on each port
   app.listen(port);
