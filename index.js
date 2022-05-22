@@ -11,7 +11,7 @@ ports.forEach(function(port) {
   });
 
   // Toy Soldier Camera
-  app.get('/proxy/toy-soldier', new MjpegProxy('http://netclaw.ddns.net:8081/video').proxyRequest);
+  app.get('/proxy/toy-soldier', new MjpegProxy('http://netclaw.ddns.net:8080/video').proxyRequest);
   
   // Test camera
   app.get('/proxy/video/1', new MjpegProxy('http://49.191.169.230:4747/video?640x480').proxyRequest);
