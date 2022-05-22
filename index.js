@@ -2,7 +2,7 @@
 var MjpegProxy = require('mjpeg-proxy').MjpegProxy;
 var express = require('express');
 var app = express();
-var ports = [80, 8080, 443];
+var ports = [80, 443];
 
 ports.forEach(function(port) {
   // Listen on the root domain (/) and display something
